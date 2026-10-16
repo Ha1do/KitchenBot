@@ -1,4 +1,5 @@
 import asyncio
+import logging
 import os
 
 from aiogram import Bot, Dispatcher
@@ -14,6 +15,7 @@ if not TOKEN:
 
 
 async def main():
+    logging.basicConfig(level=logging.INFO)
     db.init_db()
     bot = Bot(token=TOKEN)
     dp = Dispatcher()
