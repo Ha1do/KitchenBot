@@ -1,0 +1,15 @@
+# секреты и личные данные
+.env
+add_users.py
+*.db
+*.sqlite3
+
+# окружение Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+# редакторы
+.idea/
+.vscode/
